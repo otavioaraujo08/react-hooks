@@ -18,9 +18,10 @@ const reducer = (state, action) => {
       console.log('Chamou inverter');
 
       return { ...state, title: 'Um titulo aleatorio' };
-  }
 
-  return { ...state };
+    default:
+      return { ...state };
+  }
 };
 
 export default function UseReducer() {
